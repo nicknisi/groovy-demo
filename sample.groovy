@@ -1,6 +1,6 @@
 /**
  * Essential Groovy for Grails
- * Nick Nisi, TRENDS SETTER
+ * Nick Nisi
  **/
 
 /********************************************************************/
