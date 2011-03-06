@@ -5,10 +5,17 @@
 
 /********************************************************************/
 // Strings and GStrings
-println "\n\nString Test"
+println "\n\n===== String Test ====="
 def name = 'Nick'
 String str = "Nick";
 def hello = "Hello, ${name}!"
+
+def multiline = """
+This is 
+a multi-line string
+isn't that cool?
+"""
+println multiline
 
 println "name is of class ${name.class}"
 println "hello is of class ${hello.class}"
@@ -25,7 +32,7 @@ println 'double ticks interpolate... single ticks do not -- $name'
 
 /********************************************************************/
 // Integers
-println "\n\nInteger Test"
+println "\n\n===== Integer Test ====="
 def x = 4
 int y = 5;
 z = x + y
@@ -34,7 +41,7 @@ println "z is ${x + y}"
 /********************************************************************/
 // groovy closures
 // a closure is an executable block of code that can be assigned to a variable
-println "\n\nClosure Test"
+println "\n\n===== Closure Test ====="
 def c = { a, b -> a + b }
 println 'executing c... ' + c(2,2)
 
@@ -48,7 +55,7 @@ def f = {
 // groovy collections
 
 // list
-println "\n\nList Test"
+println "\n\n ===== List Test ====="
 def animals = ['cow', 'dog', 'cat']
 animals << 'penguin'
 animals.each {
@@ -57,7 +64,7 @@ animals.each {
 println "my favorite animal is ${animals[1]}"
 
 // maps
-println "\n\nMap Test"
+println "\n\n===== Map Test ====="
 def noises = [cow:'moo', dog:'woof', cat:'meow']
 noises.each { animal, noise ->
 	println "the $animal says $noise"
@@ -66,7 +73,7 @@ noises.each { animal, noise ->
 // set
 // a set can't contain duplicates and
 // can't be accessed from the subscript operator
-println "\n\nSet Test"
+println "\n\n===== Set Test ====="
 def employees = ['Joe','Nick','Ben','Dan'] as Set
 employees << 'Joe'
 employees << 'Bob'
@@ -75,7 +82,7 @@ employees.each {
 }
 
 // ranges
-println "\n\nRange Test"
+println "\n\n===== Range Test ====="
 (1..3).each {
 	println "$it..."
 }
@@ -83,7 +90,7 @@ println "Go!"
 
 /********************************************************************/
 // Classes
-println "\n\nClass Test"
+println "\n\n===== Class Test ====="
 class Cat {
 	String name
 	
@@ -99,7 +106,7 @@ cat.doStuff()
 
 /********************************************************************/
 // Operator Overloading
-println "\n\nOperator Overloading Test"
+println "\n\n===== Operator Overloading Test ======"
 class Tiger extends Cat {
 	boolean equals(String n) {
 		println "Calling my overloaded == method"
