@@ -3,6 +3,27 @@
  * Nick Nisi
  **/
 
+/**
+ * Grails Installation
+ * Download the zip file from http://grails.org/ (version 1.3.7)
+ *	Groovy comes with Grails, so no need to install it separately
+ *	For the purpose of these instructions, I have downloaded and installed
+ *	Grails to C:\grails\grails-1.3.7
+ * Set environment variables
+ *	GRAILS_HOME=C:\grails\grails-1.3.7
+ *	JAVA_HOME=[location of Java on your machine]
+ *	Add to your PATH Variable
+ *	PATH=%PATH%;%GRAILS_HOME%\bin;
+ * Open a command prompt, Type 'grails', if something happens, you're done!
+ **/
+
+/**
+ * References
+ * http://groovy.codehaus.org/Beginners+Tutorial
+ * http://grails.org/doc/latest/
+ * http://www.grails.org/Quick+Start
+ **/
+
 /********************************************************************/
 // Strings and GStrings
 println "\n\n===== String Test ====="
@@ -93,6 +114,7 @@ println "Go!"
 println "\n\n===== Class Test ====="
 class Cat {
 	String name
+	private String p = "foo"
 	
 	void doStuff() {
 		println "I iz $name and I are programmer"
@@ -103,6 +125,8 @@ def cat = new Cat()
 // getters and setters are automatically created
 cat.name = 'cletus'
 cat.doStuff()
+cat?.p = 'Hello' // private, can't be accessed
+println cat?.p // not available
 
 /********************************************************************/
 // Operator Overloading
@@ -118,3 +142,10 @@ def m = new Tiger()
 m.name = 'Tony'
 if (m == 'Tony')
 	println "these match!"
+
+/********************************************************************/	
+// dynamic typing
+def cc = "Hello"
+println "cc is of type ${cc.class}"
+cc = 4
+println "cc is of type ${cc.class}"
