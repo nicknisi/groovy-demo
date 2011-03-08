@@ -111,7 +111,34 @@
 				</p>
 				<p>
 					Below me, you will see a list of the available controllers that have been generated. Controllers are
-					generated with the <pre>grails create-controller</pre> command. 
+					generated with the <pre>grails create-controller</pre> command. The below controller is based upon the
+					Quick Start tutorial located <a href="http://grails.org/Quick+Start">here</a>. I have followed this 
+					quick start exactly, with one slight variation. Instead of using 
+					<pre>grails generate-controller org.example.Book</pre>, I used 
+					<pre>grails generate-all org.example.Book</pre>. If the former is used, and the tutorial is followed, 
+					then the BookContorller.groovy file will simply contain <pre>def scaffold = Book</pre>. This does not
+					allow for modification or viewing of the generated code.
+				</p>
+				<p>
+					Now it's your turn. Try creating a new section for magazines. Open a new terminal to [root-dir] and type
+					<pre>grails create-domain-class org.example.Magazine</pre> (note the capitalization of Magazine). Now,
+					copy the same fields (author, title) from Book.groovy. Next, we will create the scaffold, which will provide
+					us with the basic <a href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a> methods
+					to interact with our new domain. At the terminal, type <pre>grails create-controller org.example.Book</pre>.
+					This will generate [root-dir]/grails-app-controllers/or.example.BookController.groovy. Open this file and add
+					the following: <pre>def scaffold = Book</pre> and voila! Restart this grails app (hit <pre>CTRL+C</pre>
+					and then type <pre>grails run-app</pre>) and then notice that MagazineController now appears below. Click on
+					it to interact with it.
+				</p>
+				<p>
+					Finally, let's generate all of the scaffold code so that it can be edited. Stop this app <pre>CTRL+C</pre>
+					and then run the following command: <pre>grails generate-all org.example.Book</pre>. It will ask you if you
+					would like to overwrite the current MagazineController.groovy file, select y[es]. Now navigate to
+					[root-dir]/grails-app/controllers/org/example/MagazineController.groovy and notice all of the code that's
+					been generated.
+				</p>
+				<p>
+					For more information, be sure to check all of the source files for comments that describe what the file does.
 				</p>
 			</div>
 

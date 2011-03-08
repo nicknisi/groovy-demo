@@ -9,6 +9,11 @@
         <g:javascript library="application" />
     </head>
     <body>
+	<!-- 
+		This is the main layout. All of the pages will use this layout and their content will be injected into where the
+		<g:layoutBody/> tag is below. This makes it convenient to place navigation and other items that won't change from
+		page to page
+	 -->
 		<% if (params.action != null) { 
 			def firstLetter = params.controller.substring(0,1)
 			def remainder = params.controller.substring(1)

@@ -1,3 +1,7 @@
+/**
+ * This is where we configure what datasources to use. For the purposes of development,
+ * we will use the in-memory database, and therefore do not have to change anything.
+ **/
 dataSource {
     pooled = true
     driverClassName = "org.hsqldb.jdbcDriver"
