@@ -1,0 +1,63 @@
+/**
+ * sample-app.css
+ * Nick Nisi
+ * One potential problem with grails is that it has a lot of prebuilt css
+ * that you either need to eliminate or work around. For the purposes of
+ * this tutorial, I have left it and am working around it, as I want this
+ * to be as close to a vanilla installation as possible.
+ * Because I will list this css file after the default one, the rules
+ * set here will take precedence over the default rules.
+ **/
+
+div.nick-comment {
+	width: 80%;
+	border: 3px solid #356AA0;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	padding: 0;
+	margin: 10px 0px;
+}
+
+.nick-comment h1 {
+	padding: 0;
+	margin: 0;
+	height: 50px;
+	background: url("../images/gravatar.png") no-repeat center left #356AA0;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 3em;
+	padding-left: 60px;
+}
+
+.nick-comment p {
+	padding: 3px;
+}
+
+.nick-comment a, .nick-comment a:link, .nick-comment a:visited {
+	color: #356AA0;
+	font-weight: bold;
+}
+
+.nick-comment a:hover {
+	color: #48802C;
+}
+
+.app-location {
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	text-align: center;
+	background-color: yellow;
+}
+
+.app-location pre, .nick-comment pre {
+	display: inline-block;
+	padding: 0px 2px;
+	font-weight: bold;
+}
