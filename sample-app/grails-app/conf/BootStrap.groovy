@@ -1,4 +1,4 @@
-import org.example.Book
+import com.nicknisi.demo.Book
 
 class BootStrap {
 	/**

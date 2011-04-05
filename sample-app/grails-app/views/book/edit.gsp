@@ -1,6 +1,6 @@
 
 
-<%@ page import="org.example.Book" %>
+<%@ page import="com.nicknisi.demo.Book" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

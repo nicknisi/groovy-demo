@@ -1,4 +1,4 @@
-package org.example
+package com.nicknisi.demo
 
 /**
  * This is the code generated from running the following comand:

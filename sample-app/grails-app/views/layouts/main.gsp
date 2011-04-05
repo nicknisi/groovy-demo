@@ -11,7 +11,7 @@
     <body>
 	<!-- 
 		This is the main layout. All of the pages will use this layout and their content will be injected into where the
-		<g:layoutBody/> tag is below. This makes it convenient to place navigation and other items that won't change from
+		g:layoutBody tag is below. This makes it convenient to place navigation and other items that won't change from
 		page to page
 	 -->
 		<% if (params.action != null) { 
